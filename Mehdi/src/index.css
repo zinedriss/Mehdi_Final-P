@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.glassCard{
+  background:  rgba(225,225,225,0.18);
+  box-shadow:  0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(225,225,225,0.18);
+}
+
+
+.mode {
+  color: white;
+  margin-right: 5px;
+  margin-top: 5px;
+
+  
+} 
+
+.light {
+  color:white;
+  border-radius: 45px;
+  
+  cursor: pointer;
+  background: #0094F1;
+  padding: 3px;
+}
+
+.dark {
+  color: white;
+  border-radius: 45px;
+ 
+  cursor: pointer;
+  background: #0094F1;
+  padding: 3px;
+}
+
+
+.button-t:hover {
+  font-weight: bold;
+  scale: 1.5;
+}
+
+.line:hover {
+  border:1px solid rgba(225,225,225,0.18);
+scale:1.5;
+}
+
+/* responsive ui design  */
+@media (max-width: 767px) {
+.daysCard {
+ flex-wrap: nowrap;
+ overflow-x: scroll;
+}
+}
+
+@media (min-width:768px) {
+  .daysCard {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   }
+
+}
